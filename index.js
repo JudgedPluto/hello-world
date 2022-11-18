@@ -1,3 +1,4 @@
+const port = process.env.PORT || 3000;
 const http = require("http");
 
 const requestListener = function (req, res) {
@@ -6,4 +7,4 @@ const requestListener = function (req, res) {
 };
 
 const server = http.createServer(requestListener);
-server.listen(3000);
+server.listen(port);
